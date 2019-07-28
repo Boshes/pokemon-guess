@@ -1,4 +1,4 @@
 # pokemon-guess
 
-- yarn install
+- yarn
 - yarn serve

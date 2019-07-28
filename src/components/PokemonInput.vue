@@ -3,6 +3,8 @@
     <input
       v-model="stringGuess"
       type="text"
+      spellcheck="false"
+      autocomplete="off"
       @keyup.prevent.enter="guess()"
     />
     <button @click="guess">
@@ -34,6 +36,8 @@ export default {
 <style scoped>
 .pokemon-input {
   display: flex;
+  grid-column: 2;
+  grid-row: 1;
 }
 
 input[type="text"] {
@@ -46,6 +50,7 @@ input[type="text"] {
   color: #ef5350;
   letter-spacing: 0.01em;
   line-height: 0;
+  text-transform: capitalize;
   transition: all 0.3s cubic-bezier(.53,.01,.35,1.5);
 }
 
